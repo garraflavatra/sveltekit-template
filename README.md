@@ -6,15 +6,15 @@ Preconfigured SvelteKit template with:
 - Dependabot
 - VS Code configuration files
 - `.nvmrc`
-- [Netlify configuration](#netlify)
 - TypeScript support
+- [Sass]/SCSS support with [svelte-preprocess]
 
 ## Download
 
 Multiple options:
 
 - Use the GitHub template by clicking _Use this template_.
-- [Download the tarball](https://github.com/garraflavatra/sveltekit-template/tarball/main).
+- [Download the tarball].
 
 ## Developing
 
@@ -32,17 +32,15 @@ npm run dev -- --open
 
 ## Building
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+Before creating a production version of your app, install an [adapter] for your target environment. Then:
 
 ```bash
 npm run build
 ```
 
-You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production; use an adapter instead.
 
-## Netlify
-
-1. Install the `@sveltejs/adapter-netlify` with your package manager.
-2. Add `import netlify from '@sveltejs/adapter-netlify';` to `svelte.config.js`.
-3. Uncomment the adapter line in the Svelte config file.
-4. Add `/.netlify` to `.gitignore`.
+[sass]: https://sass-lang.com
+[svelte-preprocess]: https://github.com/sveltejs/svelte-preprocess
+[download the tarball]: https://github.com/garraflavatra/sveltekit-template/tarball/main
+[adapter]: https://kit.svelte.dev/docs#adapters
